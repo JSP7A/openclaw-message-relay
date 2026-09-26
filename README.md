@@ -16,6 +16,14 @@ No push notifications, attachments, cross-device conversation sharing, server-to
 
 ## Install on the Gateway machine
 
+For the published community package:
+
+```sh
+openclaw plugins install clawhub:openclaw-plugin-message-relay
+```
+
+ClawHub listing: https://clawhub.ai/plugins/openclaw-plugin-message-relay
+
 From this source package:
 
 ```sh
