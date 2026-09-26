@@ -1,0 +1,22 @@
+{
+  "name": "openclaw-plugin-message-relay",
+  "version": "0.1.0",
+  "description": "Durable, device-scoped messaging for OpenClaw clients",
+  "type": "module",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/JSP7A/openclaw-message-relay.git" },
+  "bugs": { "url": "https://github.com/JSP7A/openclaw-message-relay/issues" },
+  "engines": { "node": ">=24" },
+  "files": ["dist", "docs", "openclaw.plugin.json", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": { "openclaw": ">=2026.9.5" },
+  "devDependencies": { "openclaw": ">=2026.9.5", "typescript": "^6.0.3" },
+  "openclaw": {
+    "extensions": ["./dist/index.js"],
+    "compat": { "pluginApi": ">=2026.9.5" }
+  }
+}

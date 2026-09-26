@@ -1,0 +1,15 @@
+{
+  "id": "message-relay",
+  "name": "Message Relay",
+  "description": "Durable, device-scoped message send and sync for OpenClaw clients.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "agentId": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,64}$", "description": "Agent handling relayed messages (default: main)." },
+      "allowedDeviceIds": { "type": "array", "items": { "type": "string", "pattern": "^[a-f0-9]{64}$" }, "uniqueItems": true, "description": "Optional allowlist of approved Gateway device IDs; omitted means any paired operator device." }
+    },
+    "additionalProperties": false
+  },
+  "activation": { "onStartup": true }
+}
