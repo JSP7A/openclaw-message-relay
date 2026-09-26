@@ -2,7 +2,7 @@
 
 A self-hosted OpenClaw Gateway plugin that gives messaging apps durable text send and incremental reply sync. It is transport-agnostic: a client can reach the owner's private Gateway over a tailnet or another *owner-configured* secure route. This package does **not** create a tunnel, expose a public HTTP endpoint, or run a hosted service.
 
-**Status:** 0.1.0 release candidate. The generic archive passed a paired iPhone-simulator send/sync/reply round trip against one live Gateway on 2026-09-26. It has not been tested on a second Gateway or physical phone. Treat the wire contract as version 1, not a promise of backwards compatibility beyond 0.x.
+**Status:** Early 0.1.x release. The generic archive passed a paired iPhone-simulator send/sync/reply round trip against one live Gateway on 2026-09-26. It has not been tested on a second Gateway or physical phone. Treat the wire contract as version 1, not a promise of backwards compatibility beyond 0.x.
 
 ## What it does
 
@@ -22,7 +22,7 @@ From this source package:
 npm install
 npm test
 npm pack
-openclaw plugins install ./openclaw-plugin-message-relay-0.1.0.tgz
+openclaw plugins install ./openclaw-plugin-message-relay-0.1.1.tgz
 ```
 
 The release tarball must be produced from this directory; do not install a source tree that lacks compiled `dist/` output. Follow OpenClaw's pairing/approval prompts. The Gateway machine must remain available to accept and process messages. The database lives under the Gateway state directory at `message-relay/messages.sqlite`, separate from OpenClaw's core database.

@@ -2,7 +2,7 @@
   "id": "message-relay",
   "name": "Message Relay",
   "description": "Durable, device-scoped message send and sync for OpenClaw clients.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "configSchema": {
     "type": "object",
     "properties": {

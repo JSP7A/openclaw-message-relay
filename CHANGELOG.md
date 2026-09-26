@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-09-26
+
+- Declare OpenClaw build compatibility metadata required by ClawHub packaging.
+- Refresh early-release wording and archive install example; no messaging runtime changes.
+
 ## 0.1.0 — 2026-09-26
 
 Initial release candidate:
